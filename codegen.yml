@@ -1,0 +1,9 @@
+overwrite: true
+schema: "https://basic-lesson1.hasura.app/v1/graphql"
+documents: "queries/**/*.ts"
+generates:
+  types/genertated/graphql.tsx:
+    plugins:
+      - "typescript"
+      - "typescript-operations"
+      - "typescript-react-apollo"
